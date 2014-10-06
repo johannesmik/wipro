@@ -8,11 +8,11 @@ Python as a calculator
 
 In this exercise we learn about:
 
-    - creating new Python programs
-    - running programs
-    - variables
-    - mathematical operators (addition, subtraction, multiplication, division)
-    - the print statement
+- creating new Python programs
+- running programs
+- variables
+- mathematical operators (addition, subtraction, multiplication, division)
+- the print statement
 
 ### Important comments
 
