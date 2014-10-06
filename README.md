@@ -17,10 +17,10 @@ The minimal requirements to follow the tutorial are:
     - Matplotlib [matplotlib.org/downloads.html](http://matplotlib.org/downloads.html)
     - Scipy (Beginning from exercise sheet 10) [sourceforge.net/projects/scipy/](http://sourceforge.net/projects/scipy/files/scipy/)
 
-For **Ubuntu** you need the following packages:
+For **Ubuntu**, you can run the following command to install all packages:
 
-```
-sudo apt-get install python2.7 python-numpy python-scipy python-matplotlib
+```bash
+$ sudo apt-get install python2.7 python-numpy python-scipy python-matplotlib
 ```
 
 For **Windows**, there is a project that includes all required packages: [(Python,x,y)](https://code.google.com/p/pythonxy/). Maybe it's most convenient for you to install this package.
