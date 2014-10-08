@@ -1,4 +1,4 @@
-Sheet 0, or Python Installation Party
+Sheet 0: Python Installation Party
 =====================================
 
 Our main goal in this very first exercise is to make sure that everyone has a functioning python environment on his laptop.
@@ -61,6 +61,8 @@ Under MacOS, if you have [Macports](http://www.macports.org/) installed the most
 Testing our Python installation
 -------------------------------
 
+### The Interpreter
+
 Go to a terminal and type `python`. A python interpreter should greet you:
 
 ```
@@ -81,8 +83,26 @@ Now you should try the following:
 
 If this works, congratulations! Your python interpreter just did his very first calculation.
 
-Now we want to check if we can run python files. Create a new file and call it `test.py`. Open the file in your favorite editor and copy the following source code:
 
+### IDLE: Your first Python programming environment
+
+*IDLE* is a program where we can create new python files and run them. In a terminal type:
+
+```bash
+$ idle
+```
+
+This starts up the program. At the beginning only a so-called Python shell is open. At this place you will see the output from your next python programs.
+
+Now, from the program menu, choose "File -> New File". A new window opens, which is an editor for a new file. You can write your first simple program in it:
+
+```python
+print "Hello World"
+```
+
+From the editors menu, choose "Run -> Run Module" (Shortcut F5). The editor asks you to save the file on a place on your computer. After you saved your file, the text "Hello World" should appear in the first window:
+
+![The IDLE programming environment](./idle.png)
 
 Let's try if all the other packages got installed correctly:
 
@@ -93,7 +113,3 @@ Let's try if all the other packages got installed correctly:
 ```
 
 If you don't got any errors, then you are ready to go!
-
-
-
-Editors,
