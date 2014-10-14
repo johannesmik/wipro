@@ -1,0 +1,11 @@
+digraph {
+    label="Controlflow for the aggregate state of water"
+
+    A[label="T > 100 °C", shape="box", style=rounded];
+    B[label="T > 0 °C", shape="box", style=rounded];
+
+    A -> Gas[label="yes"];
+    A -> B[label="no"];
+    B -> Liquid[label="no"];
+    B -> Solid[label="yes"];
+}

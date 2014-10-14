@@ -113,3 +113,8 @@ Let's try if all the other packages got installed correctly:
 ```
 
 If you don't got any errors, then you are ready to go!
+
+A final comment
+---------------
+
+Make sure that your editor uses four spaces instead of tabs. So whenever you enter a `tab`, the editor replaces the tab with 4 spaces.
