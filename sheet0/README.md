@@ -21,7 +21,7 @@ Because it's quite comfortable to use, I recommend it for this tutorial.
 
 #### Installing Miniconda
 
-My recommendation is to download [Miniconda here](http://conda.pydata.org/miniconda.html), install it, and then go to a terminal and use the following command:
+My recommendation is to download [Miniconda here](http://conda.pydata.org/miniconda.html), install it, and then go to a terminal (Eingabeaufforderung) and use the following command:
 
 ```bash
 $ conda install numpy matplotlib scipy ipython
