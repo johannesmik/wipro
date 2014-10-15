@@ -24,7 +24,7 @@ Because it's quite comfortable to use, I recommend it for this tutorial.
 My recommendation is to download [Miniconda here](http://conda.pydata.org/miniconda.html), install it, and then go to a terminal and use the following command:
 
 ```bash
-$ conda install numpy matplotlib scipy
+$ conda install numpy matplotlib scipy ipython
 ```
 
 I tested it on Windows, where it worked like a charm.

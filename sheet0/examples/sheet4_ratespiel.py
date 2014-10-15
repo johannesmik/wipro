@@ -1,13 +1,14 @@
+#!/usr/bin/python
 __author__ = 'johannes'
 
 import math
 import random
 
-# Erzeuge Zufallszahl zwischen 0 und 1000
-zahl_cpu = int(random.random()*1000)
+# Erzeuge Zufallszahl zwischen 0 und 100
+zahl_cpu = int(random.random()*100)
 
 # Geht auch:
-#zahl_cpu = random.randint(0,1000)
+#zahl_cpu = random.randint(0,100)
 
 zahl_spieler = -1
 versuche = 0
