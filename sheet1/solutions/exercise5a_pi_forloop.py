@@ -1,3 +1,9 @@
+"""
+This program computes Pi using a Monte-Carlo method.
+
+Author: Johannes, October 2014
+"""
+
 import math
 import random
 

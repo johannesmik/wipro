@@ -1,3 +1,11 @@
+"""
+This program consists of two parts.
+ - The first calculates the area of a circle
+ - The second solves a quadratic equation
+
+Author: Johannes, October 2014
+"""
+
 import math
 
 # a) Area of a circle

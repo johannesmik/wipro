@@ -1,3 +1,10 @@
+"""
+This program print the aggregate state of water (Air, Liquid, or Solid)
+depending on the temperature in Celsius.
+
+Author: Johannes, October 2014
+"""
+
 t_celsius = 66.6
 
 print "The state of water with temperature", t_celsius, "degree celsius:"

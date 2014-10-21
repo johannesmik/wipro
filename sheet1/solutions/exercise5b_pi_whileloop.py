@@ -1,3 +1,9 @@
+"""
+This program computes Pi using Monte-Carlo method up to a given accuracy (compared with math.pi).
+
+Author: Johannes, October 2014
+"""
+
 import random
 import math
 

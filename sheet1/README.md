@@ -28,7 +28,7 @@ You can assign values to a variable using the **=** operator.
 
 The name of the variable comes to the left side, and the value to be assigned on the right side.
 
-For example, this assigns the integer value `5` to the variable called `age`:
+For example, this assigns the integer value `25` to the variable called `age`:
 
 ```python
 age = 25
@@ -153,6 +153,15 @@ This will print everything to a single line:
 Hello, World! Today's nice weather, isn't it?
 ```
 
+In Python 3, the print statement is replaced by a function called `print()`. If you see something
+like this:
+
+```python
+print("Hello World")
+```
+
+You can assume that the code is written in Python 3 (Note the `(` and `)` around `"Hello World"`).
+
 ### Using the **math** module
 
 For a complete overview of all available functions see: [Math Documentation](https://docs.python.org/2/library/math.html)
@@ -212,7 +221,7 @@ if 1 > 3:
     print ", world."
 ```
 
-The output is ` ` (empty).
+The output is ` ` (empty), because the condition `1 > 3` is false, so Python skips over the next two print statements.
 
 ```python
 if 1 > 3:
@@ -220,7 +229,7 @@ if 1 > 3:
 print ", world."
 ```
 
-The output is `, world`. Because the latter print statement is not part of the if code block.
+The output is `, world`. The condition `1 > 3` is still false, but the latter print statement is not part of the if code block.
 
 There's also the **elif** statement. Basically, it enables you to combine an *else* with a condition. Example:
 
@@ -233,6 +242,9 @@ elif age == 18:
 else:
   print "Your are younger than 18."
 ```
+
+You can use arbitrarily many elif statements.
+
 
 ### Number sequences with **range()**
 
