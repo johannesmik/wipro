@@ -1,6 +1,6 @@
 t_celsius = 66.6
 
-print "The Aggregate state of water with temperature", t_celsius ,"degree celsius:"
+print "The state of water with temperature", t_celsius, "degree celsius:"
 
 if t_celsius >= 100.0:
     print "Air"
@@ -26,4 +26,4 @@ if 100 <= t_celsius:
 if 0.0 <= t_celsius < 100.0:
     print "Liquid"
 if t_celsius < 0:
-    print "Solid" 
+    print "Solid"

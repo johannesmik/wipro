@@ -249,6 +249,12 @@ The function takes 3 parameters: Start (default=0), Stop, Step (default=1).
 [2, 4, 6, 8]
 ```
 
+Note that in the stop parameter is not included in the sequence: `range(5)` returns numbers from 0 to 4, but not 5!
+```python
+>>> range(5)
+[0, 1, 2, 3, 4]
+```
+
 ### Repeat code blocks **for, while**
 
 Example for loop:

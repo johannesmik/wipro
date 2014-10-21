@@ -13,7 +13,7 @@ zahl_cpu = int(random.random()*100)
 zahl_spieler = -1
 versuche = 0
 
-print "Errate meine Zahl! (Zwischen 0 und 1000)"
+print "Errate meine Zahl! (Zwischen 0 und 100)"
 
 while zahl_spieler != zahl_cpu:
     versuche += 1
