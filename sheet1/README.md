@@ -357,6 +357,22 @@ print "n times pi is ", #TODO
 print "square root of n is ", #TODO
 ```
 
+### If
+
+Using **if** conditions, write following programs. In case the condition
+is true print some text like "Access granted", "Itsa me!", or "First option selected".
+
+  - check if a variable *age* is over 18
+  - check if a variable *name* is your first name
+  - check if a variable *option* is exactly 1
+
+### If-Else
+
+Now amend your previous "if-programs" to output some text if the condition is not fulfilled,
+for example "Access denied", "Hello, stranger", or "Another option selected".
+
+You will need **else** for this.
+
 ### For loops 1
 
 Write a program that writes all numbers from 1 to 15 to the screen.

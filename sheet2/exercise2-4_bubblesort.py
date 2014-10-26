@@ -25,9 +25,7 @@ while interchanged:
     for i in range(n-1):
         # If left number is bigger than right number, interchange those
         if numbers[i] > numbers[i+1]:
-            tmp = numbers[i]
-            numbers[i] = numbers[i+1]
-            numbers[i+1] = tmp
+            numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
             interchanged = True
 
 print "The sorted number sequence:", numbers
