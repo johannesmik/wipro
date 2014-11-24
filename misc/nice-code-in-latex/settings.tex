@@ -1,0 +1,90 @@
+
+% Colors
+\usepackage{color}
+\usepackage[table]{xcolor}
+\definecolor{codestring}{rgb}{0,0.5,0} % Green
+\definecolor{codebg}{gray}{0.97} % Light gray
+\definecolor{codecomment}{rgb}{0.6, 0.0, 0.0 } % A dark red
+\definecolor{codekeyword}{rgb}{0.37, 0.08, 0.25}  % #5F1441
+
+% Captions
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\DeclareCaptionFont{black}{\color{black}}
+\DeclareCaptionFormat{listing}{\colorbox{white}{\parbox{\textwidth}{#1#2#3}}}
+
+% Listings
+\usepackage[procnames]{listings}
+\usepackage{setspace}
+\lstset{basicstyle=\ttfamily\small,breaklines=true}
+
+% Listings style
+\captionsetup[lstlisting]{format=listing}
+
+% Name for the Listing, maybe you want 'Code Listing' instead of 'Listing'
+\renewcommand{\lstlistingname}{Code Listing}
+
+% Python style
+\newcommand\pythonstyle{\lstset{
+backgroundcolor=\color{codebg},
+captionpos=b,
+frame=lines,
+language=python,
+stringstyle=\color{codestring},
+keywordstyle=\color{green},
+showstringspaces=false,
+alsoletter={1234567890},
+otherkeywords={\ , \}, \{},
+emph={access,and,as,break,class,continue,def,del,elif,else,%
+except,exec,finally,for,from,global,if,import,in,is,%
+lambda,not,or,pass,print,raise,return,try,while,assert},
+emphstyle=\color{orange}\bfseries,
+emph={[2]self},
+emphstyle=[2]\color{gray},
+emph={[4]ArithmeticError,AssertionError,AttributeError,BaseException,%
+DeprecationWarning,EOFError,Ellipsis,EnvironmentError,Exception,%
+False,FloatingPointError,FutureWarning,GeneratorExit,IOError,%
+ImportError,ImportWarning,IndentationError,IndexError,KeyError,%
+KeyboardInterrupt,LookupError,MemoryError,NameError,None,%
+NotImplemented,NotImplementedError,OSError,OverflowError,%
+PendingDeprecationWarning,ReferenceError,RuntimeError,RuntimeWarning,%
+StandardError,StopIteration,SyntaxError,SyntaxWarning,SystemError,%
+SystemExit,TabError,True,TypeError,UnboundLocalError,UnicodeDecodeError,%
+UnicodeEncodeError,UnicodeError,UnicodeTranslateError,UnicodeWarning,%
+UserWarning,ValueError,Warning,ZeroDivisionError,abs,all,any,apply,%
+basestring,bool,buffer,callable,chr,classmethod,cmp,coerce,compile,%
+complex,copyright,credits,delattr,dict,dir,divmod,enumerate,eval,%
+execfile,exit,file,filter,float,frozenset,getattr,globals,hasattr,%
+hash,help,hex,id,input,int,intern,isinstance,issubclass,iter,len,%
+license,list,locals,long,map,max,min,object,oct,open,ord,pow,property,%
+quit,range,raw_input,reduce,reload,repr,reversed,round,set,setattr,%
+slice,sorted,staticmethod,str,sum,super,tuple,type,unichr,unicode,%
+vars,xrange,zip},
+emphstyle=[4]\color{codekeyword}\textbf,
+morecomment=[s][\color{codecomment}]{"""}{"""},
+commentstyle=\color{codecomment}\slshape,
+literate={>>>}{\textbf{\textcolor{darkred}{>{>}>}}}3%
+         {...}{{\textcolor{gray}{...}}}3,
+procnamekeys={def,class},
+procnamestyle=\color{codekeyword}\textbf,
+}}
+
+% Python environment
+\lstnewenvironment{python}[1][]{
+  \pythonstyle
+  \lstset{#1}
+}{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+  \pythonstyle
+  \lstinputlisting[#1]{#2}
+}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{
+  \colorbox{codebg}{
+    % Inline
+    \pythonstyle\lstinline!#1!
+  }
+}}
+

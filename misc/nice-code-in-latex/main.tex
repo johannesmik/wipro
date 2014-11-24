@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\input{settings}
+
+\begin{document}
+
+\title{Writing Python Code in \LaTeX{}}
+\author{Johannes}
+\maketitle
+
+\section{Examples}
+
+\subsection{As a Listing}
+You can write your code in listings as you can see in Code Listing \ref{code:fibonacci}.
+
+\begin{python}[caption={This function calculates the k-th Fibonacci number recursively.}, label={code:fibonacci}]
+def fibonacci(k):
+    """ Calculate the k-th Fibonacci number """
+    if k <= 0:
+        return 0
+    elif k == 1:
+        return 1
+    else:
+        return fibonacci(k-1) + fibonacci(k-2)
+\end{python}
+
+\subsection{From a File}
+
+You can also include files, as you can see in Code Listing \ref{code:polyval}
+
+\pythonexternal[caption={This function evaluates a polynom at $x$. The coefficients of the polynom are given in a list $a$.}, label={code:polyval}]{test.py}
+
+\subsection{Inline}
+
+You can also write Python code inline. For example, we could call the Fibonacci function like this \pythoninline{print fibonacci(5)} and it would print the 5-th Fibonacci number to the terminal.
+
+Or our minimal example: \pythoninline{print "Hello World"}
+
+\end{document}
